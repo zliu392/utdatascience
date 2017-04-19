@@ -91,7 +91,7 @@
 \begin_body
 
 \begin_layout Title
-Lecture Notes, Data Science 2017
+Lecture Notes, Data Science
 \end_layout
 
 \begin_layout Section*
@@ -116,113 +116,6 @@ target "https://github.com/zliu392/utdatascience/blob/master/Apr18_Gradient_Desc
 
 \begin_layout Section*
 April 19
-\end_layout
-
-\begin_layout Subsection*
-Python Syntax
-\end_layout
-
-\begin_layout Standard
-Immutable types: numbers, strings, tuples...
-\end_layout
-
-\begin_layout Standard
-Mutable types: numpy array:
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-# Duplicate for mutable types:
-\end_layout
-
-\begin_layout Plain Layout
-
-a = b.copy()
-\end_layout
-
-\begin_layout Plain Layout
-
-# If the elements in b are also pointers, then try:
-\end_layout
-
-\begin_layout Plain Layout
-
-a = b.deepcopy()
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Tuple with one element:
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-(7,)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-List with one element:
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-[7]
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Dictionary:
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-{'name1':7, 'name2':3}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Machine Learning
-\end_layout
-
-\begin_layout Standard
-Training error high? –> Underfitting, bigger model, train longer, change
- architecture.
-\end_layout
-
-\begin_layout Standard
-Validation error high? –> Overfitting, regularization, smaller model, more
- data
 \end_layout
 
 \end_body
