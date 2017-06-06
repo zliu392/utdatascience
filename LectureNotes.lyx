@@ -225,5 +225,194 @@ Validation error high? –> Overfitting, regularization, smaller model, more
  data
 \end_layout
 
+\begin_layout Subsection*
+R in Mathematica
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Needs["RLink`"]
+\end_layout
+
+\begin_layout Plain Layout
+
+InstallR[]
+\end_layout
+
+\begin_layout Plain Layout
+
+REvaluate["a<-17"]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+May 1
+\end_layout
+
+\begin_layout Subsection*
+Mathematica Syntax
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+a = {2,234,2344}
+\end_layout
+
+\begin_layout Plain Layout
+
+a//Fullform
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This shows the structure of 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+a[[0]]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first element is called the Head.
+ Here, the output would be 
+\begin_inset Quotes eld
+\end_inset
+
+List
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+y+3sqrt(c)//Fullform
+\end_layout
+
+\begin_layout Plain Layout
+
+y+3sqrt(c)/.Power -> Times
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+May 2
+\end_layout
+
+\begin_layout Subsection*
+WebScraping
+\end_layout
+
+\begin_layout Standard
+Go to the website, click 
+\begin_inset Quotes eld
+\end_inset
+
+cmd+opi+i
+\begin_inset Quotes erd
+\end_inset
+
+ and get into development tool.
+\end_layout
+
+\begin_layout Standard
+Find a specific area, click 
+\begin_inset Quotes eld
+\end_inset
+
+inspect
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+copy -> selector
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Control the browser in the script.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+from selenium import webdriver
+\end_layout
+
+\begin_layout Plain Layout
+
+browser = webdriver.Firefox()
+\end_layout
+
+\begin_layout Plain Layout
+
+browser.get
+\end_layout
+
+\begin_layout Plain Layout
+
+element = selector
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+TensorFlow
+\end_layout
+
 \end_body
 \end_document
